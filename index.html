@@ -11,32 +11,48 @@
   <title>Attestify Now</title>
 </head>
 <body>
+    <!-- Logomarca 
+    <img src="./assets/logo2.jpeg" id="logomarca" alt="Attestify Now"> -->
+
     <div class="login-container">
-        <h2>Login</h2>
+      <!-- Título -->
+        <h2 class="subtitulo">Attestify Now</h2>
+      
+      <!-- Inicio de formulário de login -->
         <form action="#" method="post">
+          
+          <!-- Inserir dados do usuário -->
             <div class="form-group">
                 <label for="username">Usuário:</label>
                 <input type="text" id="username" name="username" required>
-            </div>
+            </div> <!-- Fim usuário -->
+          
+          <!-- Inserir senha -->
             <div class="form-group">
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" required>
-            </div>
+            </div> <!-- Fim senha -->
+          
+          <!-- Escolher perfil de login -->
             <div class="form-group">
                 <label for="profile">Perfil:</label>
                 <select id="profile" name="profile" required>
                     <option value="">Selecione o perfil</option>
                     <option value="aluno">Aluno</option>
                     <option value="professor">Professor</option>
-                    <option value="profissional">Profissional não educador</option>
+                    <option value="profissional">Profissional Não Educador</option>
                     <option value="administrador">Administrador</option>
                 </select>
-            </div>
+            </div> <!-- Fim perfil de login -->
+          
+          <!-- esqueceu senha -->
             <div class="forgot-password">
-                <a href="#">Esqueceu a senha?</a>
-            </div>
+                <a href="../links/recuperar_senha.html">Esqueceu a senha?</a>
+            </div> <!-- Fim div forgot-password -->
+          
+          <!-- Botão para logar no sistema -->
             <button type="submit" class="login-button">Login</button>
-        </form>
-    </div>
+        </form> <!-- Fim formulario -->
+    </div> <!-- Fim div login-container -->
 </body>
 </html>
