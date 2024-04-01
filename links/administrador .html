@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/perfil.css"/>
+
+  <title>Perfil Administrador</title>
+</head>
+<body>
+
+    <div class="profile-container">
+      <!-- Título -->
+        <h2 class="subtitulo">Perfil do Administrador</h2>
+      <!-- Painel com dados do usuário -->
+        <div class="admin-info">
+          <!-- Subtítulo -->
+            <h3 class="topico">Dados do Administrador</h3>
+            <p><strong>Nome Completo:</strong></p>
+            <p><strong>Cargo:</strong></p>
+            <p><strong>Matrícula:</strong></p>
+        </div> <!-- Fim admin-info -->
+      
+        <div class="validation-files">
+          <!-- Subtítulo -->
+            <h3 class="topico">Arquivos para Validar</h3>
+            <!-- Aqui você pode listar os arquivos que precisam ser validados -->
+        </div> <!-- Fim validation-files -->
+      
+        <div class="file-search">
+          <!-- Subtítulo -->
+            <h3 class="topico">Consulta de Arquivos</h3>
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label for="searchType">Consultar por:</label>
+                    <select id="searchType" name="searchType" required>
+                        <option value="turma">Turma</option>
+                        <option value="professor">Professor</option>
+                        <option value="cargo">Cargo dos Profissionais</option>
+                        <option value="nome">Nome</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="searchQuery" name="searchQuery" placeholder="Digite o termo de busca" required>
+                </div> <!-- Fim form-group -->
+              <!-- Botão para buscar -->
+                <button type="submit" class="search-button">Consultar</button>
+            </form>
+        </div> <!-- Fim file-search -->
+    </div> <!-- Fim profile-container -->
+
+  <!-- JavaScript -->
+  <script src="../scripts/script.js" defer></script>
+</body>
+</html>

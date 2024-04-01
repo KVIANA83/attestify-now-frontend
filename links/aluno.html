@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/perfil.css"/>
+
+  <title>Perfil do Aluno</title>
+</head>
+<body>
+    <div class="profile-container">
+      <!-- Título -->
+        <h2 class="subtitulo">Perfil do Aluno</h2>
+      <!-- Painel com as informações do usuário -->
+        <div class="student-info">
+          <!-- Subtítulo -->
+            <h3 class="topico">Dados do Aluno</h3>
+            <p><strong>Nome Completo:</strong></p>
+            <p><strong>Turma:</strong></p>
+            <p><strong>Modalidade:</strong></p>
+        </div> <!-- student-info -->
+      
+        <div class="certificate-request">
+          <!-- Subtítulo -->
+            <h3 class="topico">Solicitar Entrega do Atestado</h3>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="certificateDate">Data do Atestado:</label>
+                    <input type="date" id="certificateDate" name="certificateDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="certificateFile">Anexar Arquivo:</label>
+                    <input type="file" id="certificateFile" name="certificateFile" accept=".jpg, .jpeg, .png, .pdf" required>
+                </div>
+                <button type="submit" class="submit-button">Solicitar Entrega</button>
+            </form>
+        </div> <!-- Fim certificate-request -->
+      
+        <div class="certificate-history">
+          <!-- Subtítulo -->
+            <h3 class="topico">Histórico de Entrega de Atestados</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data do Atestado</th>
+                        <th>Data de Entrega</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> <!-- Fim certificate-history -->
+    </div> <!-- Fim profile-container -->
+  
+  <!-- JavaScript -->
+  <script src="../scripts/script.js" defer></script>
+</body>
+</html>
